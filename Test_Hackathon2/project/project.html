@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon2</title>
+    <link rel="stylesheet" href="./project.css" />
+    <script
+      src="https://kit.fontawesome.com/7b988689d5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="overlay" style="display: none"></div>
+    <header>
+      <div class="infotab">
+        <p>Vũ Lê Ngọc</p>
+        <img
+          src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1677509740.jpg"
+          alt=""
+        />
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </header>
+    <div class="main-container">
+      <aside>
+        <a href="../skill/skill.html">Kỹ năng</a>
+        <a href="">Dự án</a>
+      </aside>
+      <main>
+        <span
+          ><h2>Dự án</h2>
+          <button class="add-project">Thêm mới dự án</button></span
+        >
+        <div id="table" class="table-body">
+          <table class="table-inner">
+            <thead class="table-thead">
+              <tr class="table-tr">
+                <th class="table-th" width="10%">STT</th>
+                <th class="table-th">Tên dự án</th>
+                <th class="table-th">Hình ảnh</th>
+                <th class="table-th">Công nghệ</th>
+                <th class="table-th">Chức năng</th>
+              </tr>
+            </thead>
+            <tbody id="table-change">
+              <tr>
+                <td class="table-th" width="10%">STT</td>
+                <td class="table-th">Tên dự án</td>
+                <td class="table-th"><img src="" alt="" /></td>
+                <td class="table-th">Công nghệ</td>
+                <td class="table-th">
+                  <button type="button" class="updateBtn">Sửa</button
+                  ><button type="button" class="deleteBtn">Xóa</button>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody id="categoryBody"></tbody>
+          </table>
+        </div>
+        <!-- Update Data Form -->
+        <div id="updateDataForm" style="display: none">
+          <span class="form-title">
+            <h2>Thêm mới dự án</h2>
+            <i id="close-button" class="fa-solid fa-xmark"></i><br /> </span
+          ><br />
+          <label for="Dataname"><h4>Tên dự án:</h4></label>
+
+          <input type="text" id="Dataname" name="Dataname" /> <small></small
+          ><br />
+          <label for="image"><h4>Hình ảnh:</h4></label>
+          <input type="text" id="imagelink" name="imagelink" /> <small></small
+          ><br />
+          <label for="tech-used"><h4>Công nghệ sử dụng:</h4></label>
+          <input type="text" id="tech-used" name="tech-used" /> <small></small
+          ><br />
+          <label for="gitlink"><h4>Link github:</h4></label>
+          <input type="text" id="gitlink" name="gitlink" /> <small></small
+          ><br />
+          <span class="action-button">
+            <input type="button" value="Hủy" id="cancelUpdate" />
+            <input type="button" value="Thêm" id="submitUpdate"
+          /></span>
+        </div>
+                <div id="updateDataForm2" style="display: none">
+          <span class="form-title">
+            <h2>Sửa thông tin dự án</h2>
+            <i id="close-button2" class="fa-solid fa-xmark"></i><br /> </span
+          ><br />
+          <label for="Dataname"><h4>Tên dự án:</h4></label>
+
+          <input type="text" id="Dataname2" name="Dataname" /> <small></small
+          ><br />
+          <label for="image"><h4>Hình ảnh:</h4></label>
+          <input type="text" id="imagelink2" name="imagelink" /> <small></small
+          ><br />
+          <label for="tech-used"><h4>Công nghệ sử dụng:</h4></label>
+          <input type="text" id="tech-used2" name="tech-used" /> <small></small
+          ><br />
+          <label for="gitlink"><h4>Link github:</h4></label>
+          <input type="text" id="gitlink2" name="gitlink" /> <small></small
+          ><br />
+          <span class="action-button">
+            <input type="button" value="Hủy" id="cancelUpdate2" />
+            <input type="button" value="Thêm" id="submitUpdate2"
+          /></span>
+        </div>
+      </main>
+    </div>
+
+    <script src="./project.js"></script>
+  </body>
+</html>

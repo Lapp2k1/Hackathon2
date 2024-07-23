@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+.infotab {
+  display: flex;
+  gap: 10px;
+  background-color: #d5d5d6;
+  justify-content: right;
+  align-items: center;
+  height: 50px;
+  padding: 30px;
+}
+.infotab img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #041434;
+  align-content: center;
+}
+aside a {
+  padding: 13px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+aside a:nth-child(1) {
+  background-color: #1e3155;
+}
+
+aside a:hover {
+  background-color: #1e3155;
+  color: red;
+}
+main {
+  padding: 20px 20px;
+}
+main span {
+  display: flex;
+  justify-content: space-between;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+#table {
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+}
+table tr:nth-child(odd) {
+  background-color: #eee;
+}
+table tr:nth-child(even) {
+  background-color: white;
+}
+table tr:nth-child(1) {
+  background-color: white;
+}
+#updateDataForm {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  width: 400px;
+}
+.form-title{display: flex;
+justify-content: space-between;}
+#close-button{text-align: right;
+  cursor: pointer;
+position: relative;font-size: 30px;
+top: -35%; right: -19%}
+.add-skill, #submitUpdate{ appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+text-align: center;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  }
+  .add-skill{width: 25%;}
+  #submitUpdate{width: 40%;
+    font-size: 80%;}
+#overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+ #submitUpdate:hover {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+.add-skill:hover {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+#cancelUpdate{background-color: #fff;
+border: 1px solid #d5d9d9;
+border-radius: 8px;
+box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+color: #0f1111;
+cursor: pointer;
+display: inline-block;
+font-size: 13px;
+line-height: 29px;
+padding: 0 10px 0 11px;
+position: relative;
+text-align: center;
+text-decoration: none;
+width: 50px;}
+#cancelUpdate:hover{
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+table button {
+  padding: 0.6em 2em;
+  margin: 4px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+table button:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+table button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+    table * {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    table img {
+      width: 100px
+    }

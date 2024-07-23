@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon2</title>
+    <link rel="stylesheet" href="./skill.css" />
+    <script
+      src="https://kit.fontawesome.com/7b988689d5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="overlay" style="display: none"></div>
+    <header>
+      <div class="infotab">
+        <p>Vũ Lê Ngọc</p>
+        <img
+          src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1677509740.jpg"
+          alt=""
+        />
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </header>
+    <div class="main-container">
+      <aside>
+        <a href="">Kỹ năng</a>
+        <a href="../project/project.html">Dự án</a>
+      </aside>
+      <main>
+        <span
+          ><h2>Kỹ năng</h2>
+          <button class="add-skill">Thêm mới kỹ năng</button></span
+        >
+        <div id="table" class="table-body">
+          <table class="table-inner">
+            <thead class="table-thead">
+              <tr class="table-tr">
+                <th class="table-th" width="10%">STT</th>
+                <th class="table-th">Tên kỹ năng</th>
+                <th class="table-th">Hình ảnh</th>
+                <th class="table-th">Năm kinh nghiệm</th>
+                <th class="table-th">Ngày thêm</th>
+                <th class="table-th">Chức năng</th>
+              </tr>
+            </thead>
+            <tbody id="table-change">
+              <tr>
+                <td class="table-th" width="10%">STT</td>
+                <td class="table-th">Tên kỹ năng</td>
+                <td class="table-th"></td>
+                <td class="table-th">Năm kinh nghiệm</td>
+                <td class="table-th">Ngày thêm</td>
+                <td class="table-th"><button type="button" id="deleteBtn">Xóa</button></td>
+              </tr>
+            </tbody>
+
+            <tbody id="categoryBody"></tbody>
+          </table>
+        </div>
+        <!-- Update Data Form -->
+        <div id="updateDataForm" style="display: none">
+          <span class="form-title">
+            <h2>Thêm mới kỹ năng</h2>
+            <i id="close-button" class="fa-solid fa-xmark"></i><br /> </span
+          ><br />
+          <label for="Dataname"><h4>Tên kỹ năng:</h4></label>
+
+          <input type="text" id="Dataname" name="Dataname" />   <small ></small><br />
+       
+          <label for="exp"><h4>Năm kinh nghiệm:</h4></label>
+          <input type="text" id="expNum" name="expNum" />  <small ></small><br />
+          <label for="image"><h4>Hình ảnh:</h4></label>
+          <input type="text" id="imagelink" name="imagelink" />  <small ></small><br />
+          <span class="action-button">
+            <input type="button" value="Hủy" id="cancelUpdate" />
+            <input type="button" value="Thêm" id="submitUpdate"
+          /></span>
+        </div>
+      </main>
+    </div>
+
+    <script src="./skill.js"></script>
+  </body>
+</html>
